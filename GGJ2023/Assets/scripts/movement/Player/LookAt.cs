@@ -9,14 +9,14 @@ public class LookAt : MonoBehaviour
     [SerializeField] bool acelerationON, moveON;
     void Update()
     {
-        if (Input.GetButtonDown("Jump"))
-        {
-            acelerationON = !acelerationON;
-        }
-        if (Input.GetKeyDown("x"))
-        {
-            moveON = !moveON;
-        }
+        //if (Input.GetButtonDown("Jump"))
+        //{
+        //    acelerationON = !acelerationON;
+        //}
+        //if (Input.GetKeyDown("x"))
+        //{
+        //    moveON = !moveON;
+        //}
         mousePos = GetWorldMousePosition();
         diff = mousePos - transform.position;
 
