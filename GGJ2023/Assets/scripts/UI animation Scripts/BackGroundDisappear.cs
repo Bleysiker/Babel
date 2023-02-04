@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BackGroundDisappear : MonoBehaviour
 {
@@ -20,11 +21,17 @@ public class BackGroundDisappear : MonoBehaviour
     void DestinoFinal()
     {
         lvls++;
-        if (lvls > 5)
+        if (lvls > 2)
         {
             transparencia.LeanAlpha(1, aparicion);
+            StartCoroutine(Complete());
             //aca desaparecen los obstaculos
         }
+    }
+    IEnumerator Complete()
+    {
+        yield return new WaitForSeconds(aparicion);
+        SceneManager.LoadScene("Final");
     }
     void ScreenW()
     {

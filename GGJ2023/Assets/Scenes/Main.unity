@@ -316,7 +316,6 @@ GameObject:
   - component: {fileID: 232378213}
   - component: {fileID: 232378212}
   - component: {fileID: 232378211}
-  - component: {fileID: 232378210}
   - component: {fileID: 232378209}
   m_Layer: 0
   m_Name: Costillas
@@ -339,22 +338,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOver: {fileID: 11400000, guid: 4ab7801d574e9d44c97567dcf8fb4961, type: 2}
   perdio: 0
---- !u!114 &232378210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 232378202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfb77fd4ab79cc14693a54e23457f117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  limitX: 6.81
-  limitY: -14
-  posL: {x: 0, y: 0, z: 0}
-  negL: {x: 0, y: 0, z: 0}
 --- !u!114 &232378211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -505,8 +488,8 @@ MonoBehaviour:
   time: 0.8
   tbc: 1
   t: 0
-  puntuacion: f4010000e8030000d6060000b80b00009a10000076160000
-  background: 0000000000
+  puntuacion: f4010000e8030000d6060000
+  background: 000000
 --- !u!4 &309177810
 Transform:
   m_ObjectHideFlags: 0
@@ -575,7 +558,6 @@ GameObject:
   - component: {fileID: 311960084}
   - component: {fileID: 311960083}
   - component: {fileID: 311960082}
-  - component: {fileID: 311960081}
   - component: {fileID: 311960080}
   m_Layer: 0
   m_Name: Craneo Dino
@@ -598,22 +580,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOver: {fileID: 11400000, guid: 4ab7801d574e9d44c97567dcf8fb4961, type: 2}
   perdio: 0
---- !u!114 &311960081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 311960073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfb77fd4ab79cc14693a54e23457f117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  limitX: 7.33
-  limitY: -13.08
-  posL: {x: 0, y: 0, z: 0}
-  negL: {x: 0, y: 0, z: 0}
 --- !u!114 &311960082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1094,7 +1060,6 @@ GameObject:
   - component: {fileID: 535794408}
   - component: {fileID: 535794407}
   - component: {fileID: 535794406}
-  - component: {fileID: 535794405}
   - component: {fileID: 535794404}
   m_Layer: 0
   m_Name: DemonioAlado
@@ -1117,22 +1082,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOver: {fileID: 11400000, guid: 4ab7801d574e9d44c97567dcf8fb4961, type: 2}
   perdio: 0
---- !u!114 &535794405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 535794397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfb77fd4ab79cc14693a54e23457f117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  limitX: 7.33
-  limitY: -13.08
-  posL: {x: 0, y: 0, z: 0}
-  negL: {x: 0, y: 0, z: 0}
 --- !u!114 &535794406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1257,7 +1206,6 @@ GameObject:
   - component: {fileID: 559537185}
   - component: {fileID: 559537184}
   - component: {fileID: 559537183}
-  - component: {fileID: 559537182}
   - component: {fileID: 559537187}
   - component: {fileID: 559537181}
   - component: {fileID: 559537192}
@@ -1300,22 +1248,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.17114843, y: 0.2622801}
   m_EdgeRadius: 0
---- !u!114 &559537182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 559537180}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfb77fd4ab79cc14693a54e23457f117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  limitX: 7.33
-  limitY: -13.08
-  posL: {x: 0, y: 0, z: 0}
-  negL: {x: 0, y: 0, z: 0}
 --- !u!114 &559537183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1616,7 +1548,6 @@ GameObject:
   - component: {fileID: 583588281}
   - component: {fileID: 583588280}
   - component: {fileID: 583588279}
-  - component: {fileID: 583588278}
   - component: {fileID: 583588277}
   m_Layer: 0
   m_Name: Craneo de vaca
@@ -1639,22 +1570,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOver: {fileID: 11400000, guid: 4ab7801d574e9d44c97567dcf8fb4961, type: 2}
   perdio: 0
---- !u!114 &583588278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 583588270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfb77fd4ab79cc14693a54e23457f117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  limitX: 7.33
-  limitY: -13.08
-  posL: {x: 0, y: 0, z: 0}
-  negL: {x: 0, y: 0, z: 0}
 --- !u!114 &583588279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1779,7 +1694,6 @@ GameObject:
   - component: {fileID: 649366917}
   - component: {fileID: 649366916}
   - component: {fileID: 649366915}
-  - component: {fileID: 649366914}
   - component: {fileID: 649366913}
   m_Layer: 0
   m_Name: demonio normal
@@ -1802,22 +1716,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOver: {fileID: 11400000, guid: 4ab7801d574e9d44c97567dcf8fb4961, type: 2}
   perdio: 0
---- !u!114 &649366914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 649366912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfb77fd4ab79cc14693a54e23457f117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  limitX: 7.33
-  limitY: -13.08
-  posL: {x: 0, y: 0, z: 0}
-  negL: {x: 0, y: 0, z: 0}
 --- !u!114 &649366915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2189,7 +2087,6 @@ GameObject:
   - component: {fileID: 878646052}
   - component: {fileID: 878646051}
   - component: {fileID: 878646050}
-  - component: {fileID: 878646049}
   - component: {fileID: 878646048}
   m_Layer: 0
   m_Name: Condenado
@@ -2212,22 +2109,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOver: {fileID: 11400000, guid: 4ab7801d574e9d44c97567dcf8fb4961, type: 2}
   perdio: 0
---- !u!114 &878646049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 878646041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfb77fd4ab79cc14693a54e23457f117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  limitX: 7.33
-  limitY: -13.08
-  posL: {x: 0, y: 0, z: 0}
-  negL: {x: 0, y: 0, z: 0}
 --- !u!114 &878646050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2420,7 +2301,6 @@ GameObject:
   - component: {fileID: 1095942702}
   - component: {fileID: 1095942701}
   - component: {fileID: 1095942700}
-  - component: {fileID: 1095942699}
   - component: {fileID: 1095942698}
   m_Layer: 0
   m_Name: Ovni
@@ -2443,22 +2323,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOver: {fileID: 11400000, guid: 4ab7801d574e9d44c97567dcf8fb4961, type: 2}
   perdio: 0
---- !u!114 &1095942699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095942691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfb77fd4ab79cc14693a54e23457f117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  limitX: 7.63
-  limitY: -13.08
-  posL: {x: 0, y: 0, z: 0}
-  negL: {x: 0, y: 0, z: 0}
 --- !u!114 &1095942700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2672,7 +2536,6 @@ GameObject:
   - component: {fileID: 1905475487}
   - component: {fileID: 1905475486}
   - component: {fileID: 1905475485}
-  - component: {fileID: 1905475484}
   - component: {fileID: 1905475483}
   m_Layer: 0
   m_Name: Hormiga
@@ -2695,22 +2558,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOver: {fileID: 11400000, guid: 4ab7801d574e9d44c97567dcf8fb4961, type: 2}
   perdio: 0
---- !u!114 &1905475484
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1905475476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfb77fd4ab79cc14693a54e23457f117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  limitX: 7.33
-  limitY: -13.08
-  posL: {x: 0, y: 0, z: 0}
-  negL: {x: 0, y: 0, z: 0}
 --- !u!114 &1905475485
 MonoBehaviour:
   m_ObjectHideFlags: 0
