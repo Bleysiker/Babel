@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c50a2b8ed58e7194997637ad7abdc646
+guid: f3de25c5af19d6c4c81f0e64777ca352
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -101,17 +101,29 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: demonsLVL3_0
+      name: hormigas_LVL1y2_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 31
-        width: 108
-        height: 141
+        x: 36
+        y: 112
+        width: 24
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c788510dff1d7b48945cb0ade0927fb
-      internalID: 14416868
+      spriteID: c42372c57bba8b94b8b37165dfa17259
+      internalID: -159358999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: demonsLVL3_1
+      name: hormigas_LVL1y2_1
       rect:
         serializedVersion: 2
-        x: 131
-        y: 79
-        width: 64
-        height: 84
+        x: 94
+        y: 99
+        width: 51
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,19 +152,82 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c7786f46fdef054790b975a224fccca
-      internalID: -2118481884
+      spriteID: 3a53dd09aa8379a43a0eabad008d5679
+      internalID: -1256144478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: demonsLVL3_2
+      name: hormigas_LVL1y2_2
       rect:
         serializedVersion: 2
-        x: 225
-        y: 48
-        width: 95
+        x: 163
+        y: 99
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba22092e12d07d4fb926a03583dbeda
+      internalID: 1736777850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hormigas_LVL1y2_3
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 99
+        width: 73
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4060472447bfc154cbda40037a51fbcb
+      internalID: 812671083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hormigas_LVL1y2_4
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 37
+        width: 63
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a779594a3ad8e44ba82b3207c606852
+      internalID: 2042543080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hormigas_LVL1y2_5
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 5
+        width: 89
         height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -161,29 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56db916408c058e4ba539f4c3e9343f5
-      internalID: 1970381101
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: demonsLVL3_3
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 9
-        width: 39
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d70153c89423a44f968857ef9de276f
-      internalID: -2073311149
+      spriteID: 2505fc4d6bbdaa34a897399e533136a6
+      internalID: 32663835
       vertices: []
       indices: 
       edges: []
@@ -191,7 +245,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a747be3676b81d14aa505406c4951c4a
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -199,10 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      demonsLVL3_3: -2073311149
-      demonsLVL3_1: -2118481884
-      demonsLVL3_0: 14416868
-      demonsLVL3_2: 1970381101
+      hormigas_LVL1y2_2: 1736777850
+      hormigas_LVL1y2_5: 32663835
+      hormigas_LVL1y2_0: -159358999
+      hormigas_LVL1y2_3: 812671083
+      hormigas_LVL1y2_4: 2042543080
+      hormigas_LVL1y2_1: -1256144478
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

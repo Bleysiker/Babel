@@ -9,13 +9,14 @@ public class MoveObstacle : MonoBehaviour
     [SerializeField] float speedLimit;
     [SerializeField] REvents restartPos;
     [SerializeField] Transform seed;
-    [SerializeField] float offsetPos;
+    
     Rigidbody2D rb;
     [SerializeField] bool followSeed,move;
-    [SerializeField] float profundidad;
+    [SerializeField] float profundidad,offsetPos,limitX,limitY;
     [SerializeField] float tbm;
     void Awake()
     {
+        startPos.x = Random.Range(-limitX, limitX);
         transform.position=startPos;
         restartPos.GEvent += RestartPos;
         rb = GetComponent<Rigidbody2D>();
@@ -34,25 +35,16 @@ public class MoveObstacle : MonoBehaviour
 
     void RestartPos()
     {
-        offsetPos = Random.Range(1, offsetPos);
-        if (offsetPos == 1)
-        {
-            offsetPos += offsetPos;
-        }
+
+        offsetPos = Random.Range(2, 5);
         if (followSeed == true)
         {
-            startPos.x = seed.position.x + offsetPos;
+            startPos.x = seed.position.x ;
         }
         else
         {
-            if (Random.Range(1, 100) <= 50)
-            {
-                startPos.x -= offsetPos;
-            }
-            else
-            {
-                startPos.x += offsetPos;
-            }
+            startPos.x = Random.Range(-limitX, limitX);
+            profundidad = Random.Range(limitY - offsetPos, limitY);
             startPos.y = profundidad;
         }
         
