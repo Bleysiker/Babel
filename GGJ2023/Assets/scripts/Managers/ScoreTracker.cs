@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ScoreTracker : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI score;
-    [SerializeField] REvents gameOver,changeBackground;
+    [SerializeField] REvents gameOver,changeBackground,screenWhite;
     [SerializeField] float time,tbc,t;
+    
 
     [SerializeField] int[] puntuacion;
     [SerializeField] bool[] background;
@@ -85,14 +87,17 @@ public class ScoreTracker : MonoBehaviour
     }
     void GameOver()
     {
-        
+        screenWhite.FireEvent();
         StartCoroutine(Finish());
     }
     IEnumerator Finish()
     {
         playing = false;
+        PlayerPrefs.SetInt("puntaje", track);
         //roots.Play();
-        yield return new WaitForSeconds(1f);
+        
+        yield return new WaitForSeconds(4f);
+        SceneManager.LoadScene("Final");
         Time.timeScale = time;
     }
 }
