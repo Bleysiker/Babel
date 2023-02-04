@@ -52,6 +52,7 @@ public class ScoreTracker : MonoBehaviour
         if (track > puntuacion[5])
         {
             changeBackground.FireEvent();
+            PlayerPrefs.SetInt("puntaje", track);
             return;
         }
         else if (track > puntuacion[4] & background[4] == false)
