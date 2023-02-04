@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
     }
     void ContadorTiempo(bool direccion,double tiempoControl,float tiempoF)
     {
-        if (direccion = false)
+        if (direccion == false)
         {
             tiempoControl += 0.1;
         }

@@ -6,8 +6,11 @@ using TMPro;
 public class ScoreTracker : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI score;
-    [SerializeField] REvents gameOver;
+    [SerializeField] REvents gameOver,changeBackground;
     [SerializeField] float time,tbc,t;
+
+    [SerializeField] int[] puntuacion;
+    [SerializeField] bool[] background;
     //[SerializeField] ParticleSystem roots;
     bool playing = true;
     int track;
@@ -23,6 +26,7 @@ public class ScoreTracker : MonoBehaviour
     void Update()
     {
         CaidaRegistrada();
+        RecordFall();
     }
     void CaidaRegistrada()
     {
@@ -35,7 +39,7 @@ public class ScoreTracker : MonoBehaviour
                 t = tbc;
             }
             else {
-                t -= 0.35f;
+                t -= 0.05f;
             }
             
         }
@@ -43,10 +47,45 @@ public class ScoreTracker : MonoBehaviour
     }
     void RecordFall()
     {
-
+        if (track > puntuacion[5])
+        {
+            changeBackground.FireEvent();
+            return;
+        }
+        else if (track > puntuacion[4] & background[4] == false)
+        {
+            changeBackground.FireEvent();
+            background[4] = true;
+            return;
+        }
+        else if(track > puntuacion[3] & background[3] == false)
+        {
+            changeBackground.FireEvent();
+            background[3] = true;
+            return;
+        }
+        else if (track > puntuacion[2] & background[2] == false)
+        {
+            changeBackground.FireEvent();
+            background[2] = true;
+            return;
+        }
+        else if (track > puntuacion[1] & background[1] == false)
+        {
+            changeBackground.FireEvent();
+            background[1] = true;
+            return;
+        }
+        else if (track > puntuacion[0]&background[0]==false)
+        {
+            changeBackground.FireEvent();
+            background[0] = true;
+            return;
+        }
     }
     void GameOver()
     {
+        
         StartCoroutine(Finish());
     }
     IEnumerator Finish()

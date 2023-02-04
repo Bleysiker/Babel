@@ -228,9 +228,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: {fileID: 343194155}
   gameOver: {fileID: 11400000, guid: 4ab7801d574e9d44c97567dcf8fb4961, type: 2}
+  changeBackground: {fileID: 11400000, guid: f8f439b0e58c7354aab6864866383e9d, type: 2}
   time: 0.5
   tbc: 1
   t: 0
+  puntuacion: f4010000e8030000d6060000b80b00009a10000076160000
+  background: 0000000000
 --- !u!4 &309177810
 Transform:
   m_ObjectHideFlags: 0
@@ -670,7 +673,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &593100613
 SpriteRenderer:
   m_ObjectHideFlags: 0
