@@ -171,13 +171,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puntaje: {fileID: 2023112695}
+  opcion: {fileID: 0}
   transparencia: {fileID: 2023112694}
+  tpO: {fileID: 0}
   reproducirAnim: {fileID: 11400000, guid: 2a66f15aa89da3e41a3f91bda9ae8bf1, type: 2}
   aparicion: 2
   tiempoAnim: 5
   tiempoPantalla: 3
-  puntajeFinal: 200
+  puntajeFinal: 1750
   mensajeFinal: lo lograste!
+  mensajeOpcion: 
 --- !u!4 &75978855
 Transform:
   m_ObjectHideFlags: 0
