@@ -44,3 +44,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: play
+    uniqueID: 3093131515
+    locked: 0
+  - name: no interaction
+    uniqueID: 2018296163
+    locked: 0

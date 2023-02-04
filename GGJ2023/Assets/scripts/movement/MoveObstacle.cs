@@ -11,20 +11,25 @@ public class MoveObstacle : MonoBehaviour
     [SerializeField] Transform seed;
     [SerializeField] float offsetPos;
     Rigidbody2D rb;
-    [SerializeField] bool followSeed;
+    [SerializeField] bool followSeed,move;
     [SerializeField] float profundidad;
+    [SerializeField] float tbm;
     void Awake()
     {
         transform.position=startPos;
         restartPos.GEvent += RestartPos;
         rb = GetComponent<Rigidbody2D>();
         RestartPos();
+        StartCoroutine(TimeBeforeMove());
     }
 
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = moveDir * speedLimit;
+        if (move == true)
+        {
+            rb.velocity = moveDir * speedLimit;
+        }
     }
 
     void RestartPos()
@@ -53,6 +58,11 @@ public class MoveObstacle : MonoBehaviour
         
         transform.position = startPos;
 
+    }
+    IEnumerator TimeBeforeMove()
+    {
+        yield return new WaitForSeconds(tbm);
+        move = true;
     }
     private void OnDestroy()
     {

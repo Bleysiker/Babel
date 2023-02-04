@@ -38,8 +38,8 @@ public class PlayerController : MonoBehaviour
             izq = false;
         }
 
-        ContadorTiempo(der, tD, tiempoClick);
-        ContadorTiempo(izq, tI, tiempoClick);
+        //ContadorTiempo(der, tD, tiempoClick);
+        //ContadorTiempo(izq, tI, tiempoClick);
         LimitarVelocidad();
     }
     void ContadorTiempo(bool direccion,double tiempoControl,float tiempoF)
