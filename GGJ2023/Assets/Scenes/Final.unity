@@ -181,8 +181,8 @@ MonoBehaviour:
   aparicion: 2
   tiempoAnim: 5
   tiempoPantalla: 3
-  puntajeFinal: 1750
-  mensajeFinal: lo lograste!
+  puntajeFinal: 2000
+  mensajeFinal: Haz alcanzado el cielo!
   mensajeOpcion: oprime espacio para volver a jugar
 --- !u!4 &75978855
 Transform:
@@ -228,7 +228,7 @@ MonoBehaviour:
   - {fileID: 1086991263}
   - {fileID: 1966192690}
   - {fileID: 1985990805}
-  puntajes: 00000000f4010000e8030000d6060000b80b0000
+  puntajes: f4010000ee020000e8030000dc050000d0070000
   puntajeFinal: 0
   tiempoPantalla: 3
 --- !u!1 &343010227

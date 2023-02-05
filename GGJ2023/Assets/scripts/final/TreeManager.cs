@@ -59,7 +59,13 @@ public class TreeManager : MonoBehaviour
             arbol[1].FireEvent();
             return;
         }
-        
+        else if (puntajeFinal >= puntajes[0])
+        {
+            tree[0].SetActive(true);
+            arbol[0].FireEvent();
+            return;
+        }
+
     }
     
 }
