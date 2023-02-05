@@ -7,7 +7,7 @@ public class MoveObstacle : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] Vector3 moveDir,startPos;
     [SerializeField] float speedLimit;
-    [SerializeField] REvents restartPos;
+    [SerializeField] REvents restartPos,changeBackGround;
     [SerializeField] Transform seed;
     
     Rigidbody2D rb;
@@ -19,6 +19,7 @@ public class MoveObstacle : MonoBehaviour
         startPos.x = Random.Range(-limitX, limitX);
         transform.position=startPos;
         restartPos.GEvent += RestartPos;
+        //changeBackGround.GEvent += Pausa;
         rb = GetComponent<Rigidbody2D>();
         RestartPos();
         StartCoroutine(TimeBeforeMove());
@@ -56,8 +57,15 @@ public class MoveObstacle : MonoBehaviour
         yield return new WaitForSeconds(tbm);
         move = true;
     }
+    //void Pausa()
+    //{
+    //    move = false;
+    //    StartCoroutine(TimeBeforeMove());
+    //}
+    
     private void OnDestroy()
     {
         restartPos.GEvent -= RestartPos;
+        //changeBackGround.GEvent -= Pausa;
     }
 }

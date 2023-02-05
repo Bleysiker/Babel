@@ -314,9 +314,9 @@ GameObject:
   m_Component:
   - component: {fileID: 232378214}
   - component: {fileID: 232378213}
+  - component: {fileID: 232378224}
   - component: {fileID: 232378223}
   - component: {fileID: 232378212}
-  - component: {fileID: 232378211}
   - component: {fileID: 232378209}
   - component: {fileID: 232378222}
   - component: {fileID: 232378221}
@@ -347,30 +347,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOver: {fileID: 11400000, guid: 4ab7801d574e9d44c97567dcf8fb4961, type: 2}
   perdio: 0
---- !u!114 &232378211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 232378202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d62c7eac2c64d3c44bb7b378ce1fcd99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveDir: {x: 0, y: 1, z: 0}
-  startPos: {x: 8.28, y: -13.08, z: 0}
-  speedLimit: 3
-  restartPos: {fileID: 11400000, guid: e2864356d16765540bfb9f128f403aa4, type: 2}
-  seed: {fileID: 772459219}
-  followSeed: 0
-  move: 1
-  profundidad: -14
-  offsetPos: 3
-  limitX: 8.08
-  limitY: -6.6
-  tbm: 5
 --- !u!50 &232378212
 Rigidbody2D:
   serializedVersion: 4
@@ -452,7 +428,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 232378202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9, y: -6.63, z: 0}
+  m_LocalPosition: {x: 7.27, y: -6.63, z: 0}
   m_LocalScale: {x: 4.5, y: 4.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -681,6 +657,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: 0, z: 1}
   speed: 28
+--- !u!114 &232378224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232378202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d62c7eac2c64d3c44bb7b378ce1fcd99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveDir: {x: 0, y: 1, z: 0}
+  startPos: {x: 0, y: 0, z: 0}
+  speedLimit: 5
+  restartPos: {fileID: 11400000, guid: fd1303f136ccc7d4c998a99a6052507f, type: 2}
+  changeBackGround: {fileID: 11400000, guid: f8f439b0e58c7354aab6864866383e9d, type: 2}
+  seed: {fileID: 772459219}
+  followSeed: 0
+  move: 0
+  profundidad: 0
+  offsetPos: 5
+  limitX: 7.27
+  limitY: -6.63
+  tbm: 5
 --- !u!1 &309177808
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,8 +720,8 @@ MonoBehaviour:
   time: 0.8
   tbc: 1
   t: 0
-  puntuacion: f4010000e8030000d6060000
-  background: 000000
+  puntuacion: f4010000e8030000d6060000b80b0000
+  background: 00000000
 --- !u!4 &309177810
 Transform:
   m_ObjectHideFlags: 0
@@ -749,7 +750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transparencia: {fileID: 1549430603}
-  changeBackground: {fileID: 11400000, guid: f8f439b0e58c7354aab6864866383e9d, type: 2}
+  changeBackground: {fileID: 11400000, guid: 287f25e13f64a8b4f9084f29dd48778f, type: 2}
   screenW: {fileID: 11400000, guid: da12854292810564aaa938c5d6103649, type: 2}
   lvls: 0
   aparicion: 2.5
@@ -774,6 +775,7 @@ MonoBehaviour:
   - {fileID: 311960073}
   - {fileID: 535794397}
   - {fileID: 878646041}
+  - {fileID: 649366912}
   changeBackGround: {fileID: 11400000, guid: f8f439b0e58c7354aab6864866383e9d, type: 2}
   change: 0
   tiempoNegro: 1
@@ -834,9 +836,10 @@ MonoBehaviour:
   startPos: {x: 8.28, y: -13.08, z: 0}
   speedLimit: 3
   restartPos: {fileID: 11400000, guid: e2864356d16765540bfb9f128f403aa4, type: 2}
+  changeBackGround: {fileID: 11400000, guid: f8f439b0e58c7354aab6864866383e9d, type: 2}
   seed: {fileID: 772459219}
   followSeed: 0
-  move: 1
+  move: 0
   profundidad: -11.08
   offsetPos: 3
   limitX: 8.47
@@ -1247,6 +1250,7 @@ GameObject:
   - component: {fileID: 500331006}
   - component: {fileID: 500331008}
   - component: {fileID: 500331009}
+  - component: {fileID: 500331010}
   m_Layer: 0
   m_Name: back2
   m_TagString: Untagged
@@ -1295,8 +1299,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.12309431, b: 0.58431375, a: 1}
+  m_Sprite: {fileID: 21300000, guid: f83bb4da4aa57a245b89deb28962acd9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1314,8 +1318,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500331005}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -10.03, z: 0}
-  m_LocalScale: {x: 10.023551, y: 10.023551, z: 10.023551}
+  m_LocalPosition: {x: 0, y: -10, z: 0}
+  m_LocalScale: {x: 0.93186, y: 0.93914026, z: 0.93186}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1334,8 +1338,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDir: {x: 0, y: 1, z: 0}
-  limit: {x: 0, y: 6.2, z: 0}
-  startPos: {x: 0, y: -9.99, z: 0}
+  limit: {x: 0, y: 10, z: 0}
+  startPos: {x: 0, y: -10, z: 0}
   speed: 5
 --- !u!50 &500331009
 Rigidbody2D:
@@ -1358,6 +1362,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &500331010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500331005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e058e6b4c15a6ae43819219209aae75f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fondo:
+  - {fileID: 21300000, guid: 14691e162ceedff43bec25b53f9fa19d, type: 3}
+  - {fileID: 21300000, guid: 5478f89b64d5f81488416a151c8f3001, type: 3}
+  imagen: {fileID: 500331006}
+  changeBackground: {fileID: 11400000, guid: 287f25e13f64a8b4f9084f29dd48778f, type: 2}
+  f: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1516,9 +1538,10 @@ MonoBehaviour:
   startPos: {x: 8.28, y: -13.08, z: 0}
   speedLimit: 3
   restartPos: {fileID: 11400000, guid: e2864356d16765540bfb9f128f403aa4, type: 2}
+  changeBackGround: {fileID: 11400000, guid: f8f439b0e58c7354aab6864866383e9d, type: 2}
   seed: {fileID: 772459219}
   followSeed: 0
-  move: 1
+  move: 0
   profundidad: -11.08
   offsetPos: 3
   limitX: 7.37
@@ -1934,6 +1957,7 @@ MonoBehaviour:
   startPos: {x: 8.28, y: -13.08, z: 0}
   speedLimit: 3
   restartPos: {fileID: 11400000, guid: e2864356d16765540bfb9f128f403aa4, type: 2}
+  changeBackGround: {fileID: 11400000, guid: f8f439b0e58c7354aab6864866383e9d, type: 2}
   seed: {fileID: 772459219}
   followSeed: 0
   move: 0
@@ -2264,6 +2288,7 @@ MonoBehaviour:
   startPos: {x: 8.28, y: -13.08, z: 0}
   speedLimit: 3
   restartPos: {fileID: 11400000, guid: e2864356d16765540bfb9f128f403aa4, type: 2}
+  changeBackGround: {fileID: 11400000, guid: f8f439b0e58c7354aab6864866383e9d, type: 2}
   seed: {fileID: 772459219}
   followSeed: 0
   move: 0
@@ -2612,9 +2637,10 @@ MonoBehaviour:
   startPos: {x: 8.28, y: -13.08, z: 0}
   speedLimit: 3
   restartPos: {fileID: 11400000, guid: e2864356d16765540bfb9f128f403aa4, type: 2}
+  changeBackGround: {fileID: 11400000, guid: f8f439b0e58c7354aab6864866383e9d, type: 2}
   seed: {fileID: 772459219}
   followSeed: 0
-  move: 1
+  move: 0
   profundidad: -11.08
   offsetPos: 3
   limitX: -8.4
@@ -3154,9 +3180,10 @@ MonoBehaviour:
   startPos: {x: 8.28, y: -13.08, z: 0}
   speedLimit: 3
   restartPos: {fileID: 11400000, guid: e2864356d16765540bfb9f128f403aa4, type: 2}
+  changeBackGround: {fileID: 11400000, guid: f8f439b0e58c7354aab6864866383e9d, type: 2}
   seed: {fileID: 772459219}
   followSeed: 0
-  move: 1
+  move: 0
   profundidad: -11.08
   offsetPos: 3
   limitX: 8.08
@@ -3491,9 +3518,10 @@ MonoBehaviour:
   startPos: {x: 8.28, y: -13.08, z: 0}
   speedLimit: 3
   restartPos: {fileID: 11400000, guid: e2864356d16765540bfb9f128f403aa4, type: 2}
+  changeBackGround: {fileID: 11400000, guid: f8f439b0e58c7354aab6864866383e9d, type: 2}
   seed: {fileID: 772459219}
   followSeed: 0
-  move: 1
+  move: 0
   profundidad: -11.08
   offsetPos: 3
   limitX: 8.77
@@ -3723,7 +3751,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!225 &1549430603
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -3849,6 +3877,7 @@ MonoBehaviour:
   startPos: {x: 8.28, y: -13.08, z: 0}
   speedLimit: 3
   restartPos: {fileID: 11400000, guid: e2864356d16765540bfb9f128f403aa4, type: 2}
+  changeBackGround: {fileID: 11400000, guid: f8f439b0e58c7354aab6864866383e9d, type: 2}
   seed: {fileID: 772459219}
   followSeed: 0
   move: 0
@@ -4067,6 +4096,7 @@ GameObject:
   - component: {fileID: 2056851857}
   - component: {fileID: 2056851859}
   - component: {fileID: 2056851860}
+  - component: {fileID: 2056851861}
   m_Layer: 0
   m_Name: back1
   m_TagString: Untagged
@@ -4115,8 +4145,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.5849056, g: 0.043889325, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: f83bb4da4aa57a245b89deb28962acd9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4135,7 +4165,7 @@ Transform:
   m_GameObject: {fileID: 2056851856}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0, z: 0}
-  m_LocalScale: {x: 10.023551, y: 10.023551, z: 10.023551}
+  m_LocalScale: {x: 0.93186, y: 0.9481677, z: 0.93186}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4154,8 +4184,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDir: {x: 0, y: 1, z: 0}
-  limit: {x: 0, y: 9.99, z: 0}
-  startPos: {x: 0, y: -9.99, z: 0}
+  limit: {x: 0, y: 10, z: 0}
+  startPos: {x: 0, y: -10, z: 0}
   speed: 5
 --- !u!50 &2056851860
 Rigidbody2D:
@@ -4178,3 +4208,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2056851861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056851856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e058e6b4c15a6ae43819219209aae75f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fondo:
+  - {fileID: 21300000, guid: 14691e162ceedff43bec25b53f9fa19d, type: 3}
+  - {fileID: 21300000, guid: 5478f89b64d5f81488416a151c8f3001, type: 3}
+  imagen: {fileID: 2056851857}
+  changeBackground: {fileID: 11400000, guid: 287f25e13f64a8b4f9084f29dd48778f, type: 2}
+  f: 0
