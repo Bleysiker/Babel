@@ -15,29 +15,40 @@ public class LookAt : MonoBehaviour
     }
     void Update()
     {
-        if (alive == true)
+        mousePos = GetWorldMousePosition();
+        if ((transform.position - mousePos).magnitude<0.1)
         {
-            //if (Input.GetButtonDown("Jump"))
-            //{
-            //    acelerationON = !acelerationON;
-            //}
-            //if (Input.GetKeyDown("x"))
-            //{
-            //    moveON = !moveON;
-            //}
-            mousePos = GetWorldMousePosition();
-            diff = mousePos - transform.position;
-
-            RotateTo(acelerationON);
-            //Vector3 tangent = new Vector3(-Mathf.Sin(angle), Mathf.Cos(angle));
-            //float tetha= Mathf.Atan2(tangent.y, tangent.x);
-
-            transform.rotation = Quaternion.Euler(0f, 0f, angle * Mathf.Rad2Deg);
-            if (moveON == true)
-            {
-                Move(acelerationON);
-            }
+            moveON = false;
         }
+        else
+        {
+            moveON = true;
+        }
+            if (alive == true)
+            {
+                //if (Input.GetButtonDown("Jump"))
+                //{
+                //    acelerationON = !acelerationON;
+                //}
+                //if (Input.GetKeyDown("x"))
+                //{
+                //    moveON = !moveON;
+                //}
+                mousePos = GetWorldMousePosition();
+                diff = mousePos - transform.position;
+
+                RotateTo(acelerationON);
+                //Vector3 tangent = new Vector3(-Mathf.Sin(angle), Mathf.Cos(angle));
+                //float tetha= Mathf.Atan2(tangent.y, tangent.x);
+
+                transform.rotation = Quaternion.Euler(0f, 0f, angle * Mathf.Rad2Deg);
+                if (moveON == true)
+                {
+                    Move(acelerationON);
+                }
+            }
+        
+        
         
 
 
