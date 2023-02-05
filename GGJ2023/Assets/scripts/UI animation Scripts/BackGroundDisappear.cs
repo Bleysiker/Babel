@@ -20,13 +20,18 @@ public class BackGroundDisappear : MonoBehaviour
 
     void DestinoFinal()
     {
-        lvls++;
+        
         if (lvls > 2)
         {
             transparencia.LeanAlpha(1, aparicion);
             StartCoroutine(Complete());
-            //aca desaparecen los obstaculos
+            //aca deben desaparecer los obstaculos
         }
+        else
+        {
+            lvls++;
+        }
+        
     }
     IEnumerator Complete()
     {

@@ -49,17 +49,11 @@ public class ScoreTracker : MonoBehaviour
     }
     void RecordFall()
     {
-        if (track > puntuacion[3] & background[3] == false)
+        
+        if (track > puntuacion[2] & background[2] == false)
         {
             changeBackground.FireEvent();
-            PlayerPrefs.SetInt("puntaje", track);
-            return;
-        }
-
-        else if (track > puntuacion[2] & background[2] == false)
-        {
-            changeBackground.FireEvent();
-            background[2] = true;
+            GameOver();
             return;
         }
         else if (track > puntuacion[1] & background[1] == false)
@@ -86,7 +80,7 @@ public class ScoreTracker : MonoBehaviour
         PlayerPrefs.SetInt("puntaje", track);
         //roots.Play();
         
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(4.5f);
         SceneManager.LoadScene("Final");
         Time.timeScale = time;
     }
