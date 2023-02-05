@@ -41,7 +41,7 @@ public class ScoreTracker : MonoBehaviour
                 t = tbc;
             }
             else {
-                t -= 0.05f;
+                t -= 11*Time.deltaTime;
             }
             
         }
