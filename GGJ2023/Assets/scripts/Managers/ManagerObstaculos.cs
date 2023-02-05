@@ -12,7 +12,7 @@ public class ManagerObstaculos : MonoBehaviour
     private void Awake()
     {
         changeBackGround.GEvent += ActivateObjs;
-        for(int i = 3; i < 8; i++)
+        for(int i = 3; i < 9; i++)
         {
             obstaculo[i].SetActive(false);
         }
@@ -46,7 +46,7 @@ public class ManagerObstaculos : MonoBehaviour
             obstaculo[5].SetActive(false);
             obstaculo[6].SetActive(true);
             obstaculo[7].SetActive(true);
-
+            obstaculo[8].SetActive(true);
         }
     }
     private void OnDestroy()
