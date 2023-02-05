@@ -1653,7 +1653,7 @@ GameObject:
   - component: {fileID: 792243972}
   - component: {fileID: 792243971}
   m_Layer: 0
-  m_Name: Particle System (1)
+  m_Name: Particle SystemHojas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12173,7 +12173,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1363789355
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18804,7 +18804,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 713672959255251409, guid: 09980f6d62c019e45ae50d32f882b81f, type: 3}
       propertyPath: m_Name
-      value: Particle System (2)
+      value: ParticleRaices
       objectReference: {fileID: 0}
     - target: {fileID: 713672959255251412, guid: 09980f6d62c019e45ae50d32f882b81f, type: 3}
       propertyPath: m_RootOrder
