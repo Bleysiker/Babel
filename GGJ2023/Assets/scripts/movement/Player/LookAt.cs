@@ -6,31 +6,45 @@ public class LookAt : MonoBehaviour
 {
     [SerializeField] Vector3 diff, velocity, mousePos, aceleration;
     [SerializeField] float speed, angle;
-    [SerializeField] bool acelerationON, moveON;
+    [SerializeField] bool acelerationON, moveON,alive;
+    [SerializeField] REvents gameOver;
+
+    private void Start()
+    {
+        gameOver.GEvent += Dead;
+    }
     void Update()
     {
-        //if (Input.GetButtonDown("Jump"))
-        //{
-        //    acelerationON = !acelerationON;
-        //}
-        //if (Input.GetKeyDown("x"))
-        //{
-        //    moveON = !moveON;
-        //}
-        mousePos = GetWorldMousePosition();
-        diff = mousePos - transform.position;
-
-        RotateTo(acelerationON);
-        //Vector3 tangent = new Vector3(-Mathf.Sin(angle), Mathf.Cos(angle));
-        //float tetha= Mathf.Atan2(tangent.y, tangent.x);
-
-        transform.rotation = Quaternion.Euler(0f, 0f, angle * Mathf.Rad2Deg);
-        if (moveON == true)
+        if (alive == true)
         {
-            Move(acelerationON);
+            //if (Input.GetButtonDown("Jump"))
+            //{
+            //    acelerationON = !acelerationON;
+            //}
+            //if (Input.GetKeyDown("x"))
+            //{
+            //    moveON = !moveON;
+            //}
+            mousePos = GetWorldMousePosition();
+            diff = mousePos - transform.position;
+
+            RotateTo(acelerationON);
+            //Vector3 tangent = new Vector3(-Mathf.Sin(angle), Mathf.Cos(angle));
+            //float tetha= Mathf.Atan2(tangent.y, tangent.x);
+
+            transform.rotation = Quaternion.Euler(0f, 0f, angle * Mathf.Rad2Deg);
+            if (moveON == true)
+            {
+                Move(acelerationON);
+            }
         }
+        
 
 
+    }
+    void Dead()
+    {
+        alive = false;
     }
     private Vector4 GetWorldMousePosition()
     {
@@ -87,5 +101,8 @@ public class LookAt : MonoBehaviour
             angle = Mathf.Atan2(diff.y, diff.x);
         }
     }
-
+    private void OnDestroy()
+    {
+        gameOver.GEvent -= Dead;
+    }
 }
