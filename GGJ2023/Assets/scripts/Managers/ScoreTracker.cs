@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class ScoreTracker : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI score;
-    [SerializeField] REvents gameOver,changeBackground,screenWhite;
+    [SerializeField] REvents gameOver,changeBackground,screenWhite,changeMessage,achivementS;
     [SerializeField] float time,tbc,t;
     
 
@@ -52,6 +52,7 @@ public class ScoreTracker : MonoBehaviour
         
         if (track > puntuacion[2] & background[2] == false)
         {
+            achivementS.FireEvent();
             changeBackground.FireEvent();
             GameOver();
             return;
@@ -59,12 +60,15 @@ public class ScoreTracker : MonoBehaviour
         else if (track > puntuacion[1] & background[1] == false)
         {
             changeBackground.FireEvent();
+            changeMessage.FireEvent();
+            achivementS.FireEvent();
             background[1] = true;
             return;
         }
         else if (track > puntuacion[0]&background[0]==false)
         {
             changeBackground.FireEvent();
+            achivementS.FireEvent();
             background[0] = true;
             return;
         }
