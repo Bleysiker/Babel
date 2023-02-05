@@ -1650,7 +1650,7 @@ GameObject:
   - component: {fileID: 792243972}
   - component: {fileID: 792243971}
   m_Layer: 0
-  m_Name: Particle System (1)
+  m_Name: Particle SystemHojas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19181,6 +19181,7 @@ AudioSource:
 --- !u!114 &2125149111
 MonoBehaviour:
   m_ObjectHideFlags: 0
+
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -19195,3 +19196,4 @@ MonoBehaviour:
   transicion: 2
   startGame: {fileID: 11400000, guid: 90254db11c6235a4fade5fb2ef88859a, type: 2}
   transparencia: {fileID: 1367136750}
+
