@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Final.unity
     guid: ced585e5cdf35bc448558fe5f126486d
+  - enabled: 1
+    path: Assets/Scenes/Juanes.unity
+    guid: f6a1d7216bd2c4643b4d0261cfaccad1
   m_configObjects: {}
