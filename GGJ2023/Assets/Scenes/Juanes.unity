@@ -13828,7 +13828,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1880335663
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19181,7 +19181,6 @@ AudioSource:
 --- !u!114 &2125149111
 MonoBehaviour:
   m_ObjectHideFlags: 0
-
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -19196,4 +19195,3 @@ MonoBehaviour:
   transicion: 2
   startGame: {fileID: 11400000, guid: 90254db11c6235a4fade5fb2ef88859a, type: 2}
   transparencia: {fileID: 1367136750}
-
